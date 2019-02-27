@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import history from '../../history';
 
 class Post extends Component {
@@ -11,12 +10,16 @@ class Post extends Component {
     }
 
     render() {
-        const { title, body, comments } = this.props.post;
+        const {
+            post: { title, body, comments, id },
+            deletePost
+        } = this.props;
 
         return (
             <article className="post">
-                <p className="title">{title}</p>
-                <p className="body">{body}</p>
+                <p className="title">Title: {title}</p>
+                <p className="body">Text: {body}</p>
+                <p>Comments:</p>
                 <ul className="comments">
                     {comments &&
                         comments.map(comment => (
@@ -25,6 +28,7 @@ class Post extends Component {
                             </div>
                         ))}
                 </ul>
+                <button onClick={() => deletePost(id)}>Delete post</button>
             </article>
         );
     }

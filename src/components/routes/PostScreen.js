@@ -4,13 +4,12 @@ import Post from '../../redux/containers/PostContainer';
 import PostForm from '../../redux/containers/FormPost';
 
 class PostScreen extends Component {
-    state = {};
     render() {
         return (
             <div>
                 <Header />
                 <Post />
-                <PostForm />
+                <PostForm buttonOpenText="Change post" />
             </div>
         );
     }

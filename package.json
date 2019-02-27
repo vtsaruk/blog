@@ -1,9 +1,11 @@
 {
-    "name": "test-blog",
+    "name": "blog",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
+        "@redux-saga/testing-utils": "^1.0.2",
         "axios": "^0.18.0",
+        "node-sass": "^4.11.0",
         "react": "^16.8.3",
         "react-dom": "^16.8.3",
         "react-redux": "^6.0.1",
@@ -11,7 +13,8 @@
         "react-scripts": "2.1.5",
         "redux": "^4.0.1",
         "redux-actions": "^2.6.4",
-        "redux-form": "^8.1.0",
+        "redux-form": "8.1.0",
+        "redux-form-saga": "^0.2.0",
         "redux-saga": "^1.0.1"
     },
     "scripts": {

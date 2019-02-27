@@ -1,4 +1,4 @@
-import { takeEvery, put, take } from 'redux-saga/effects';
+import { takeEvery, put } from 'redux-saga/effects';
 import { getPosts, setPosts } from '../modules/listPosts';
 import axios from 'axios';
 

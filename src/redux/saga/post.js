@@ -1,9 +1,8 @@
-import { takeEvery, put, take } from 'redux-saga/effects';
+import { takeEvery, put } from 'redux-saga/effects';
 import { getPost, setPost } from '../modules/post';
 import axios from 'axios';
 
 function* listPostWorker(state) {
-    console.log('listPostWorker', state);
     const { payload } = state;
 
     try {

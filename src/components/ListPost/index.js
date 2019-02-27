@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import './scss/style.scss';
 class ListPost extends Component {
     state = {};
 
@@ -14,8 +15,8 @@ class ListPost extends Component {
                 {posts.map(post => (
                     <li key={post.id}>
                         <Link to={'/posts/' + post.id}>
-                            <p className="title">{post.title}</p>
-                            <p className="body">{post.body}</p>
+                            <p className="title">Title: {post.title}</p>
+                            <p className="body">Text: {post.body}</p>
                         </Link>
                     </li>
                 ))}

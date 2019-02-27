@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import component from '../../components/Post';
-import { getPost } from '../modules/post';
+import { getPost, deletePost } from '../modules/post';
 
 const mapStoreToProps = state => ({
     post: state.post.post
@@ -8,5 +8,5 @@ const mapStoreToProps = state => ({
 
 export default connect(
     mapStoreToProps,
-    { getPost }
+    { getPost, deletePost }
 )(component);

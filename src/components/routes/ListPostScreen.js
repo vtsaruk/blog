@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../Header';
 import ListPost from '../../redux/containers/ListPostContainer';
+import PostForm from '../../redux/containers/FormPost';
 
 class ListPostScreen extends Component {
     state = {};
@@ -10,6 +11,7 @@ class ListPostScreen extends Component {
             <div>
                 <Header />
                 <ListPost />
+                <PostForm buttonOpenText="Add post" />
             </div>
         );
     }
